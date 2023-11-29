@@ -19,7 +19,7 @@ VALUES
 ('password456', NULL, 0, 'customer5', 'Robert', 'Brown', 'robert.brown@email.com', 0, 1, '2023-11-24 18:45:00', '7778889999', '222 Birch St', NULL, 'Villageburg', 'IL', '54321', 'USA');
 
 
-### Table 2 : `app_hotelroom`
+## Table 2 : `app_hotelroom`
 ### Attributes : `id`, `number`, `room_type`, `description`, `price_per_night`, `max_occupancy`, `is_available`
 ### Primary Key : `id`
 ### Sample Data :
@@ -32,7 +32,7 @@ VALUES
 ('404', 'VIP', 'VIP Suite with Jacuzzi and Lounge Area', 299.99, 4, 1),
 ('505', 'FAM', 'Family Suite with Two Bedrooms', 249.99, 4, 1);
 
-### Table 3 : `app_roombooking`
+## Table 3 : `app_roombooking`
 ### Attributes : `id`, `check_in_date`, `check_out_date`, `number_of_guests`, `total_amount`, `is_paid`, `customer_id`, `room_id`
 ### Primary key : `id`
 ### Foreign keys : `customer_id`, `room_id`
@@ -52,7 +52,7 @@ VALUES
 ('2024-01-15', '2024-01-20', 3, 599.99, 1, 5, 5);
 
 
-### Table 4 : `app_bookingservice`
+## Table 4 : `app_bookingservice`
 ### Attributes: `id`, `room_booking_id`,  `room_service_id`
 ### Primary key : `id`
 ### Foreign keys : `room_booking_id`,  `room_service_id`
@@ -71,7 +71,7 @@ VALUES
 (4, 4),
 (5, 5);
 
-### Table 5: `app_hotelpayment`
+## Table 5: `app_hotelpayment`
 ### Attributes :`id`, `amount`, `payment_date`, `payment_method`, `is_successful`, `customer_id`, `room_booking_id`
 ### Primary key : `id`
 ### Foreign keys : `customer_id`, `room_booking_id`

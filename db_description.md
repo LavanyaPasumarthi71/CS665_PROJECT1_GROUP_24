@@ -5,7 +5,7 @@ Our database management system project encompasses a Hotel Management System wit
 The customer module empowers users to view their profiles, create reservations, verify room availability and access receipt information. Simultaneously, the admin module allows administrators to view their profiles, 
 manage room additions or deletions, and verify room availability.
 
-### Table 1 : `app_customer`
+## Table 1 : `app_customer`
 ### Attributes : `id`, `password`, `last_login`,`is_superuser`,`username`, `first_name`, `last_name`, `email`, `is_staff`, `is_active`, `date_joined`, `phone`, `address1`, `address2`, `city`, `state_code`, `zip_code`, `country`
 ### Primary Key : `id`
 ### Sample Data :

@@ -31,3 +31,59 @@ VALUES
 ('303', 'KNG', 'King Suite with a Private Balcony', 199.99, 2, 1),
 ('404', 'VIP', 'VIP Suite with Jacuzzi and Lounge Area', 299.99, 4, 1),
 ('505', 'FAM', 'Family Suite with Two Bedrooms', 249.99, 4, 1);
+
+### Table 3 : `app_roombooking`
+### Attributes : `id`, `check_in_date`, `check_out_date`, `number_of_guests`, `total_amount`, `is_paid`, `customer_id`, `room_id`
+### Primary key : `id`
+### Foreign keys : `customer_id`, `room_id`
+### Indexes :
+
+Index on `customer_id`: `app_roombooking_customer_id_969bec7d`
+Index on `room_id`: `app_roombooking_room_id_caedf380`
+
+### Sample Data :
+
+INSERT INTO "app_roombooking" ("check_in_date", "check_out_date", "number_of_guests", "total_amount", "is_paid", "customer_id", "room_id")
+VALUES
+('2023-12-01', '2023-12-05', 2, 499.99, 1, 1, 1),
+('2023-12-10', '2023-12-15', 1, 299.99, 0, 2, 2),
+('2023-12-20', '2023-12-25', 4, 899.99, 1, 3, 3),
+('2024-01-05', '2024-01-10', 2, 349.99, 0, 4, 4),
+('2024-01-15', '2024-01-20', 3, 599.99, 1, 5, 5);
+
+
+### Table 4 : `app_bookingservice`
+### Attributes: `id`, `room_booking_id`,  `room_service_id`
+### Primary key : `id`
+### Foreign keys : `room_booking_id`,  `room_service_id`
+### Indexes:
+
+Index on `room_booking_id`: `app_bookingservice_room_booking_id_1c31c30f`
+Index on `room_service_id`: `app_bookingservice_room_service_id_6e420b66`
+
+### Sample Data :
+
+INSERT INTO "app_bookingservice" ("room_booking_id", "room_service_id")
+VALUES
+(1, 1),
+(2, 2),
+(3, 3),
+(4, 4),
+(5, 5);
+
+### Table 5: `app_hotelpayment`
+### Attributes :`id`, `amount`, `payment_date`, `payment_method`, `is_successful`, `customer_id`, `room_booking_id`
+### Primary key : `id`
+### Foreign keys : `customer_id`, `room_booking_id`
+### Indexes :
+ Index on `customer_id`: `app_hotelpayment_customer_id_adec9912`
+
+### Sample Data :
+
+INSERT INTO "app_hotelpayment" ("amount", "payment_date", "payment_method", "is_successful", "customer_id", "room_booking_id")
+VALUES
+(150.00, '2023-12-01 14:30:00', 'CC', 1, 1, 1),
+(200.50, '2023-12-10 10:45:00', 'PP', 1, 2, 2),
+(100.75, '2023-12-20 18:00:00', 'CC', 0, 3, 3),
+(75.25, '2024-01-05 08:15:00', 'PP', 1, 4, 4),
+(120.00, '2024-01-15 16:30:00', 'CC', 1, 5, 5);

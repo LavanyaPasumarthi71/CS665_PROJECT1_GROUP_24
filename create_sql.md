@@ -227,3 +227,54 @@ UPDATE app_hotelpayment
 SET amount = 150.00
 WHERE id = 1
 
+
+## Delete
+
+### Delete command for `app_customer`
+- Delete a specific customer
+
+DELETE FROM app_customer
+WHERE id = 3;
+
+### Delete command for `app_hotelroom`
+- Delete a room with a specific number:
+
+-- Delete room with number '303'
+DELETE FROM app_hotelroom
+WHERE number = '303';
+
+### Delete command for `app_roombooking`
+
+- Delete a room booking:
+
+-- Delete a specific room booking
+DELETE FROM app_roombooking
+WHERE id = 4;
+
+- Delete all room bookings for a specific customer:
+
+-- Delete all room bookings for a specific customer
+DELETE FROM app_roombooking
+WHERE customer_id = 3;
+
+### Delete command for `app_bookingservice`
+- Delete a specific entry from app_bookingservice by id:
+
+-- DELETE FROM app_bookingservice
+WHERE id = [booking_service_id];
+
+- Delete all services associated with a specific booking:
+
+-- DELETE FROM app_bookingservice
+WHERE room_booking_id = [room_booking_id];
+
+- Delete all services associated with a specific room service:
+
+-- DELETE FROM app_bookingservice
+WHERE room_service_id = [room_service_id];
+
+### Delete command for `app_hotelpayment`
+
+DELETE FROM app_hotelpayment
+WHERE customer_id = 1;
+   

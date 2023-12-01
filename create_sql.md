@@ -169,4 +169,61 @@ AND ('<check_in_date>' BETWEEN rb.check_in_date AND rb.check_out_date
    SELECT *
    FROM app_hotelpayment
    WHERE room_booking_id = 1;
-   
+
+## Update
+
+### Update command for `app_customer`
+- Update email for a specific customer
+
+UPDATE app_customer
+SET email = 'newmail@gmail.com'
+WHERE id = 10;
+
+### Update command for `app_hotelroom`
+- Update the description and price of a room with a specific number:
+
+-- Update the description and price of room with number '101'
+UPDATE app_hotelroom
+SET description = 'Updated Description', price_per_night = 129.99
+WHERE number = '101';
+
+- Mark a room as unavailable:
+
+-- Mark room with number '202' as unavailable
+UPDATE app_hotelroom
+SET is_available = 0
+WHERE number = '202';
+
+### Update command for `app_roombooking`
+
+- Update room booking details:
+
+-- Update check-in date and number of guests for a specific room booking
+UPDATE app_roombooking
+SET check_in_date = '2023-12-15', number_of_guests = 3
+WHERE id = 1;
+
+- Update payment status for a room booking:
+
+-- Mark a room booking as paid
+UPDATE app_roombooking
+SET is_paid = 1
+WHERE id = 5;
+
+### Update command for `app_bookingservice`
+
+- Update Statement:
+
+-- Update the room_service_id for a specific booking:
+
+UPDATE app_bookingservice
+SET room_service_id = 5
+WHERE room_booking_id = 3;
+
+### Update command for `app_hotelpayment`
+-- Update payment amount for a specific payment ID:
+
+UPDATE app_hotelpayment
+SET amount = 150.00
+WHERE id = 1
+

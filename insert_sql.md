@@ -27,3 +27,15 @@ INSERT INTO app_customer VALUES(19,'pbkdf2_sha256$600000$uOe0DxQnR3HqEjXisSNnxV$
 INSERT INTO app_hotelroom VALUES(1,'1','SGL','single bed rooms are fine for one people',100,1,0);
 INSERT INTO app_hotelroom VALUES(2,'2','DBL','double bed rooms for fine for two people',100,2,0);
 INSERT INTO app_hotelroom VALUES(7,'3','KNG','This is basic description for king room',150,2,0);
+
+### Data dump for `app_roombooking`
+
+INSERT INTO app_roombooking VALUES(1,'2023-11-11','2023-11-12',1,100,0,3,1);
+INSERT INTO app_roombooking VALUES(2,'2023-11-12','2023-11-13',1,100,1,3,2);
+INSERT INTO app_roombooking VALUES(3,'2023-11-12','2023-11-13',1,100,1,6,1);
+INSERT INTO app_roombooking VALUES(4,'2023-11-12','2023-11-12',1,100,1,9,2);
+INSERT INTO app_roombooking VALUES(5,'2023-11-13','2023-11-12',1,100,1,9,1);
+INSERT INTO app_roombooking VALUES(6,'2023-11-13','2023-11-14',1,100,1,9,1);
+INSERT INTO app_roombooking VALUES(7,'2023-11-13','2023-11-14',1,100,1,9,2);
+INSERT INTO app_roombooking VALUES(8,'2023-11-13','2023-11-15',1,100,1,14,1);
+INSERT INTO app_roombooking VALUES(9,'2023-11-13','2023-11-14',2,150,1,19,7);

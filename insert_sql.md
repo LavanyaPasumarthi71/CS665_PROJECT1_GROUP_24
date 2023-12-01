@@ -39,3 +39,19 @@ INSERT INTO app_roombooking VALUES(6,'2023-11-13','2023-11-14',1,100,1,9,1);
 INSERT INTO app_roombooking VALUES(7,'2023-11-13','2023-11-14',1,100,1,9,2);
 INSERT INTO app_roombooking VALUES(8,'2023-11-13','2023-11-15',1,100,1,14,1);
 INSERT INTO app_roombooking VALUES(9,'2023-11-13','2023-11-14',2,150,1,19,7);
+
+### Data dump for `app_bookingservice`
+
+INSERT INTO app_bookingservice VALUES(8,7,6);
+INSERT INTO app_bookingservice VALUES(10,9,10);
+
+### Data dump for `app_hotelpayment`
+
+INSERT INTO app_hotelpayment VALUES(1,125,'2023-11-11 07:14:16.154960','CC',1,3,2);
+INSERT INTO app_hotelpayment VALUES(2,125,'2023-11-11 09:16:08.928964','CC',1,6,3);
+INSERT INTO app_hotelpayment VALUES(3,125,'2023-11-11 19:59:00.869200','CC',1,9,4);
+INSERT INTO app_hotelpayment VALUES(4,125,'2023-11-11 20:06:42.289439','CC',1,9,5);
+INSERT INTO app_hotelpayment VALUES(5,125,'2023-11-11 20:09:17.625371','CC',1,9,6);
+INSERT INTO app_hotelpayment VALUES(6,110,'2023-11-11 20:11:16.165280','CC',1,9,7);
+INSERT INTO app_hotelpayment VALUES(7,125,'2023-11-13 14:24:48.504558','CC',1,14,8);
+INSERT INTO app_hotelpayment VALUES(8,195,'2023-11-13 15:56:18.743146','DC',1,19,9);

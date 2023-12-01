@@ -34,9 +34,12 @@ The Hotel Management System is a database management system (DBMS) project desig
 1. Clone the repository: `git clone https://github.com/your-username/hotel-management-system.git`
 2. Navigate to the project directory: `cd hotel-management-system`
 
+### Database Schema
+Our database consists of various tables each with Primary Key, Indexes, Foreign key and triggers. Main tables are mentioned in our db_description.
+
 ### Contributions
 
 - Lavanya Pasumarthi (GITHUB ID - LavanyaPasumarthi71) - Responsible for designing the database schema.Implemented the structure and relationships between different entities.Also responisble to add database connections and backend and UI design of applications.
 - Gunturi Venkata Reddy (GITHUB ID - VenkataReddyGUnturi1) -Tasked with inserting data into the database.Assisted in performing CRUD (Create, Read, Update, Delete) operations.Also did perform backend and frontend binding logic.
-- Kiran - Focused on implementing CRUD operations on the data.Ensured smooth functionality for creating, reading, updating, and deleting records.And helped in performing UI logic for the application and tested application thoroughly.
+- Chandra Kiran danda (GITHUB ID - kirandanda2001)- Focused on implementing CRUD operations on the data.Ensured smooth functionality for creating, reading, updating, and deleting records.And helped in performing UI logic for the application and tested application thoroughly.
 

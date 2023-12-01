@@ -114,3 +114,59 @@ LEFT JOIN app_roombooking rb ON hr.id = rb.room_id
 AND ('<check_in_date>' BETWEEN rb.check_in_date AND rb.check_out_date
    OR '<check_out_date>' BETWEEN rb.check_in_date AND rb.check_out_date
    OR rb.id IS NULL);
+
+### Read command for `app_bookingservice`
+
+
+1. **Retrieve All Bookings with Associated Room Services:**
+   
+   SELECT * FROM app_bookingservice;
+   
+
+2. **Retrieve Booking Services for a Specific Room Booking ID:**
+   
+   SELECT * FROM app_bookingservice WHERE "room_booking_id" = 1;
+   
+
+3. **Retrieve Booking Services for a Specific Room Service ID:**
+   
+   SELECT * FROM app_bookingservice WHERE "room_service_id" = 2;
+   
+
+4. **Retrieve Booking Service Details for a Specific Booking ID and Room Service ID:**
+   
+   SELECT * FROM app_bookingservice WHERE "room_booking_id" = 1 AND "room_service_id" = 2;
+   
+### Read command for `app_hotelpayment`
+
+1. **Select all payments with their details:**
+   
+   SELECT * FROM app_hotelpayment;
+
+2. **Select the total amount of successful payments:**
+   
+   SELECT SUM(amount) as total_amount
+   FROM app_hotelpayment
+   WHERE is_successful = 1;
+   
+
+3. **Select payment details for a specific customer:**
+   
+   SELECT *
+   FROM app_hotelpayment
+   WHERE customer_id = 1;
+   
+4. **Select successful payments made on a specific date:**
+   
+   
+   SELECT *
+   FROM app_hotelpayment
+   WHERE is_successful = 1 AND DATE(payment_date) = '2023-12-01';
+
+
+5. **Select payment details for a specific room booking:**
+   
+   SELECT *
+   FROM app_hotelpayment
+   WHERE room_booking_id = 1;
+   

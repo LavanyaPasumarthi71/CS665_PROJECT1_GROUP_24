@@ -21,3 +21,9 @@ INSERT INTO app_customer VALUES(16,'pbkdf2_sha256$600000$wbCXm0kFDLaIyesXupZbP4$
 INSERT INTO app_customer VALUES(17,'pbkdf2_sha256$600000$qVgoXgJ9aaAHmaX2AUlheO$7D78edoi0jho2EHu6JUdOtMKZy+2t58s9+Am5Cc6BIw=','2023-11-13 14:46:37.013033',0,'c@gmail.com','','','',0,1,'2023-11-13 14:46:35.866342','1234567890','24','woodlawn','Wichita','KS','67220','United States');
 INSERT INTO app_customer VALUES(18,'pbkdf2_sha256$600000$HEwxB4S6u1JROA11umv1uk$qm6ImF8yCYpvqoTuOLQFB119XuiI8c4O7dLB3M6eyrA=','2023-11-13 15:49:23.585620',1,'admintest@gmail.com','','','',1,1,'2023-11-13 15:49:22.397638','1234567890','23','woodlawn','Wichita','KS','67220','United States');
 INSERT INTO app_customer VALUES(19,'pbkdf2_sha256$600000$uOe0DxQnR3HqEjXisSNnxV$l3e0P/1+62dwMV3SrcaxYxbyUhhxyhUdTqZ5BZswWH4=','2023-11-13 15:54:15.159627',0,'testcustomer@gmail.com','','','',0,1,'2023-11-13 15:54:13.839674','1234567890','234','woodlawn','Wichita','KS','67220','United States');
+
+### Data dump for `app_hotelroom`
+
+INSERT INTO app_hotelroom VALUES(1,'1','SGL','single bed rooms are fine for one people',100,1,0);
+INSERT INTO app_hotelroom VALUES(2,'2','DBL','double bed rooms for fine for two people',100,2,0);
+INSERT INTO app_hotelroom VALUES(7,'3','KNG','This is basic description for king room',150,2,0);

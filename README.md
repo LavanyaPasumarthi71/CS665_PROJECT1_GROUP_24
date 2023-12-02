@@ -45,7 +45,7 @@ The back-end of the Hotel Management System is powered by the Python Django fram
 
 The SQLite database is utilized for data storage, providing a lightweight and easy-to-use solution for development. Database migrations are managed through Django's built-in migration system.
 
-### Contributions
+## Contributions
 
 - Lavanya Pasumarthi (GITHUB ID - LavanyaPasumarthi71) - Responsible for designing the database schema.Implemented the structure and relationships between different entities.Also responisble to add database connections and backend and UI design of applications.
 - Gunturi Venkata Reddy (GITHUB ID - VenkataReddyGUnturi1) -Tasked with inserting data into the database.Assisted in performing CRUD (Create, Read, Update, Delete) operations.Also did perform backend and frontend binding logic.

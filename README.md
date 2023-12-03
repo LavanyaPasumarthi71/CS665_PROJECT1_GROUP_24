@@ -49,6 +49,9 @@ The SQLite database is utilized for data storage, providing a lightweight and ea
 
 - https://youtu.be/yJwaHcU3Qhw
 
+## PROJECT REPO
+- https://github.com/LavanyaPasumarthi71/CS665_PROJECT1_GROUP_24
+
 ## Contributions
 
 - Lavanya Pasumarthi (GITHUB ID - LavanyaPasumarthi71 -WSU ID - C788P474) - Responsible for designing the database schema.Implemented the structure and relationships between different entities.Also responisble to add database connections and backend and UI design of applications.

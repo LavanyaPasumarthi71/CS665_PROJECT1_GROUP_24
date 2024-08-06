@@ -132,3 +132,85 @@ The Employee List page provides a comprehensive list of all employees. Users can
 ---
 
 This documentation provides a clear and detailed description of the Employee List page, its functionalities, and instructions on how to use it.
+
+Certainly! Here’s a revised documentation for the Employee List page, incorporating the two components and additional details:
+
+---
+
+### Employee List Page Documentation
+
+#### Overview
+The Employee List page consists of two main components: **Employee List** and **Employee Profile**. This page allows users to view and manage employee information, including roles and reporting structures. 
+
+#### Components
+
+1. **Employee List**
+   - Displays a list of all employees.
+   - Features include:
+     - **View Profile**: Opens detailed information about the selected employee.
+     - **Edit Employee Position**: Allows users to update the employee's position.
+     - **Batch Export**: Exports the employee data to CSV or JSON format based on user permissions.
+
+2. **Employee Profile**
+   - Provides detailed information about an individual employee.
+   - Admin users have additional functionalities:
+     - **Change Role**: Admins can modify the role of the employee within the system.
+     - **Change Reports To**: Admins and editors can update the employee's reporting structure, specifying who the employee reports to.
+
+#### Role-Based Access
+
+- **Administrator**
+  - Full access to all features:
+    - View and edit employee profiles.
+    - Change employee roles.
+    - Update the reporting structure.
+    - Export employee data.
+
+- **Editor**
+  - Can:
+    - View and edit employee profiles.
+    - Update the reporting structure.
+    - Export employee data.
+
+- **HR Manager**
+  - Can:
+    - View employee profiles.
+    - Edit positions.
+    - Export employee data.
+
+- **Employee**
+  - Can:
+    - View their own profile only.
+
+#### Usage Instructions
+
+1. **Viewing Profiles**
+   - Go to the Employee List page.
+   - Click "View Profile" next to the desired employee to access their detailed profile.
+
+2. **Editing Employee Position**
+   - On the Employee List page, click "Edit" next to the employee's name.
+   - Update the employee's position details and save changes.
+
+3. **Changing Role**
+   - In the Employee Profile, Admins can modify the employee’s role.
+   - Click on the "Change Role" button and select the new role from the dropdown list.
+
+4. **Changing Reports To**
+   - In the Employee Profile, Admins and Editors can update the reporting structure.
+   - Click on "Change Reports To" and select the appropriate manager or supervisor.
+
+5. **Exporting Employee Data**
+   - On the Employee List page, click the "Export" button.
+   - Choose CSV or JSON format.
+   - Confirm the export action to download the file.
+
+#### Notes
+- Ensure you have the necessary permissions to perform role changes or updates to reporting structures.
+- For assistance or technical support, contact the system administrator.
+
+---
+
+This documentation provides a comprehensive overview of the Employee List page and its functionalities, detailing the access permissions and usage instructions for different roles.
+
+

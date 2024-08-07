@@ -214,3 +214,98 @@ The Employee List page consists of two main components: **Employee List** and **
 This documentation provides a comprehensive overview of the Employee List page and its functionalities, detailing the access permissions and usage instructions for different roles.
 
 
+
+
+
+Sure, here's a detailed documentation for the two pages: the "Module List Page" and the "Module Details Page."
+
+## Module List Page
+
+### Overview
+The Module List Page displays all modules with their respective activity status and includes functionalities to add new modules, view module details, and manage module statuses. 
+
+### Features
+
+1. **Display Modules Information**: 
+    - **Module Name**: Displays the name of the module.
+    - **Activity Status**: Indicates whether the module is active or inactive.
+    - **Additional Info**: Shows brief details about the module (e.g., description, creation date).
+
+2. **Add New Module Button**: 
+    - **Button**: A button labeled "Add New Module" to initiate the creation of a new module.
+    - **Dropdown for Product Selection**: When clicked, it opens a form that includes a dropdown menu for selecting products. Only active products are shown in the dropdown.
+    
+3. **View Stats Button**: 
+    - **Button**: A button labeled "View Stats" to display statistics related to the module (e.g., usage metrics, performance data).
+
+4. **Perform Actions**:
+    - **View Module**: 
+        - **Button**: A button labeled "View" to see detailed information about the module.
+        - **Details**: Opens a detailed view page displaying all departments, positions, and employees under the selected module.
+    - **Deactivate Module**: 
+        - **Button**: A button labeled "Deactivate" to soft delete the module, making it inactive without permanently removing it.
+    - **Activate Module**: 
+        - **Button**: A button labeled "Activate" to reactivate a previously deactivated module.
+    - **Deactivate Batch**: 
+        - **Button**: A button labeled "Deactivate Batch" to deactivate multiple modules at once.
+    - **Activate Batch**: 
+        - **Button**: A button labeled "Activate Batch" to reactivate multiple previously deactivated modules.
+
+### User Interface
+
+- **Table Layout**: The modules are displayed in a tabular format with columns for module name, activity status, actions, etc.
+- **Action Buttons**: Action buttons are placed in a dedicated column, making it easy to perform actions on individual modules.
+
+## Module Details Page
+
+### Overview
+The Module Details Page provides in-depth information about a specific module, including its departments, positions, and employees. It also allows for the management of the module's status.
+
+### Features
+
+1. **Module Information**: 
+    - **Module Name**: Displays the name of the module.
+    - **Description**: Provides a detailed description of the module.
+    - **Activity Status**: Indicates the current activity status (active/inactive).
+
+2. **Departments**: 
+    - **List of Departments**: Displays all departments under the module.
+    - **Department Info**: Shows brief details about each department (e.g., name, head of department).
+
+3. **Positions**: 
+    - **List of Positions**: Displays all positions under each department.
+    - **Position Info**: Shows brief details about each position (e.g., title, reporting manager).
+
+4. **Employees**: 
+    - **List of Employees**: Displays all employees under each position.
+    - **Employee Info**: Shows brief details about each employee (e.g., name, job title, contact info).
+
+5. **Actions**:
+    - **Activate/Deactivate Module**:
+        - **Button**: A button to toggle the activity status of the module.
+    - **Activate/Deactivate Batch**:
+        - **Button**: A button to toggle the activity status of multiple modules at once.
+
+### User Interface
+
+- **Details Layout**: The page is structured to show hierarchical information, starting from the module, then departments, followed by positions, and finally employees.
+- **Action Buttons**: Located prominently to ensure easy access for activating/deactivating the module or performing batch actions.
+
+### Example Usage
+
+1. **Adding a New Module**:
+    - Click the "Add New Module" button.
+    - Select an active product from the dropdown.
+    - Fill in the required information and save the module.
+
+2. **Viewing a Module**:
+    - Click the "View" button next to the desired module.
+    - Review detailed information about the module, its departments, positions, and employees.
+
+3. **Managing Module Status**:
+    - Click "Deactivate" to make a module inactive.
+    - Click "Activate" to reactivate a module.
+    - Use "Deactivate Batch" or "Activate Batch" to manage multiple modules at once.
+
+This documentation covers the primary functionalities and layout of the Module List Page and the Module Details Page. Let me know if you need more detailed information or further assistance!
+

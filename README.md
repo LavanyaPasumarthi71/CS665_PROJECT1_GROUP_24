@@ -131,3 +131,7 @@ The OrgChart component visually represents the organizational hierarchy of produ
   - The tree structure is designed to be intuitive, allowing users to navigate complex organizational structures with ease.
 
 This documentation provides a detailed overview of the OrgChart component, outlining its features, user interactions, and code structure.
+
+
+
+The Time Machine page allows users to view the state of a module at a specific point in time. By selecting a product, the corresponding modules can be explored, and users can choose a particular date and time to see how the selected module appeared during that period.

@@ -96,121 +96,13 @@ The Employee List page provides a comprehensive list of all employees. Users can
 - **Supervisor**
   - Can view profiles and edit positions.
 - **Employee**
-  - Limited to viewing profiles only.
-
-#### Export Functionality
-- Users with the necessary permissions can export the employee list.
-- Export options:
-  - **CSV Format**
-    - Suitable for spreadsheet applications.
-    - Includes all visible columns in the employee list.
-  - **JSON Format**
-    - Suitable for data interchange and integration with other systems.
-    - Includes detailed employee information.
-
-#### Usage Instructions
-
-1. **Viewing Profiles**
-   - Navigate to the Employee List page.
-   - Click the "View Profile" button next to the desired employee’s entry to view detailed information.
-
-2. **Editing Employee Positions**
-   - Navigate to the Employee List page.
-   - Click the "Edit" button next to the desired employee’s entry.
-   - Make the necessary changes to the employee's position and save.
-
-3. **Exporting Employee Data**
-   - Navigate to the Employee List page.
-   - Click the "Export" button.
-   - Select the desired format (CSV or JSON) for the export.
-   - Confirm the export action. The file will be downloaded based on the selected format and applied filters.
-
-#### Notes
-- Ensure you have the appropriate permissions for the actions you intend to perform.
-- For any issues or further assistance, contact the system administrator.
-
----
-
-This documentation provides a clear and detailed description of the Employee List page, its functionalities, and instructions on how to use it.
-
-Certainly! Here’s a revised documentation for the Employee List page, incorporating the two components and additional details:
-
----
-
+  - Limited to viewing profiles 
 ### Employee List Page Documentation
 
 #### Overview
 The Employee List page consists of two main components: **Employee List** and **Employee Profile**. This page allows users to view and manage employee information, including roles and reporting structures. 
 
-#### Components
-
-1. **Employee List**
-   - Displays a list of all employees.
-   - Features include:
-     - **View Profile**: Opens detailed information about the selected employee.
-     - **Edit Employee Position**: Allows users to update the employee's position.
-     - **Batch Export**: Exports the employee data to CSV or JSON format based on user permissions.
-
-2. **Employee Profile**
-   - Provides detailed information about an individual employee.
-   - Admin users have additional functionalities:
-     - **Change Role**: Admins can modify the role of the employee within the system.
-     - **Change Reports To**: Admins and editors can update the employee's reporting structure, specifying who the employee reports to.
-
-#### Role-Based Access
-
-- **Administrator**
-  - Full access to all features:
-    - View and edit employee profiles.
-    - Change employee roles.
-    - Update the reporting structure.
-    - Export employee data.
-
-- **Editor**
-  - Can:
-    - View and edit employee profiles.
-    - Update the reporting structure.
-    - Export employee data.
-
-- **HR Manager**
-  - Can:
-    - View employee profiles.
-    - Edit positions.
-    - Export employee data.
-
-- **Employee**
-  - Can:
-    - View their own profile only.
-
-#### Usage Instructions
-
-1. **Viewing Profiles**
-   - Go to the Employee List page.
-   - Click "View Profile" next to the desired employee to access their detailed profile.
-
-2. **Editing Employee Position**
-   - On the Employee List page, click "Edit" next to the employee's name.
-   - Update the employee's position details and save changes.
-
-3. **Changing Role**
-   - In the Employee Profile, Admins can modify the employee’s role.
-   - Click on the "Change Role" button and select the new role from the dropdown list.
-
-4. **Changing Reports To**
-   - In the Employee Profile, Admins and Editors can update the reporting structure.
-   - Click on "Change Reports To" and select the appropriate manager or supervisor.
-
-5. **Exporting Employee Data**
-   - On the Employee List page, click the "Export" button.
-   - Choose CSV or JSON format.
-   - Confirm the export action to download the file.
-
-#### Notes
-- Ensure you have the necessary permissions to perform role changes or updates to reporting structures.
-- For assistance or technical support, contact the system administrator.
-
----
-
+#### 
 This documentation provides a comprehensive overview of the Employee List page and its functionalities, detailing the access permissions and usage instructions for different roles.
 
 
@@ -219,35 +111,7 @@ This documentation provides a comprehensive overview of the Employee List page a
 
 Sure, here's a detailed documentation for the two pages: the "Module List Page" and the "Module Details Page."
 
-## Module List Page
-
-### Overview
-The Module List Page displays all modules with their respective activity status and includes functionalities to add new modules, view module details, and manage module statuses. 
-
-### Features
-
-1. **Display Modules Information**: 
-    - **Module Name**: Displays the name of the module.
-    - **Activity Status**: Indicates whether the module is active or inactive.
-    - **Additional Info**: Shows brief details about the module (e.g., description, creation date).
-
-2. **Add New Module Button**: 
-    - **Button**: A button labeled "Add New Module" to initiate the creation of a new module.
-    - **Dropdown for Product Selection**: When clicked, it opens a form that includes a dropdown menu for selecting products. Only active products are shown in the dropdown.
-    
-3. **View Stats Button**: 
-    - **Button**: A button labeled "View Stats" to display statistics related to the module (e.g., usage metrics, performance data).
-
-4. **Perform Actions**:
-    - **View Module**: 
-        - **Button**: A button labeled "View" to see detailed information about the module.
-        - **Details**: Opens a detailed view page displaying all departments, positions, and employees under the selected module.
-    - **Deactivate Module**: 
-        - **Button**: A button labeled "Deactivate" to soft delete the module, making it inactive without permanently removing it.
-    - **Activate Module**: 
-        - **Button**: A button labeled "Activate" to reactivate a previously deactivated module.
-    - **Deactivate Batch**: 
-        - **Button**: A button labeled "Deactivate Batch" to deactivate multiple modules at once.
+## 
     - **Activate Batch**: 
         - **Button**: A button labeled "Activate Batch" to reactivate multiple previously deactivated modules.
 
@@ -294,12 +158,7 @@ The Module Details Page provides in-depth information about a specific module, i
 ### Example Usage
 
 1. **Adding a New Module**:
-    - Click the "Add New Module" button.
-    - Select an active product from the dropdown.
-    - Fill in the required information and save the module.
-
-2. **Viewing a Module**:
-    - Click the "View" button next to the desired module.
+    - Click the "Add New Module" View" button next to the desired module.
     - Review detailed information about the module, its departments, positions, and employees.
 
 3. **Managing Module Status**:
@@ -309,3 +168,58 @@ The Module Details Page provides in-depth information about a specific module, i
 
 This documentation covers the primary functionalities and layout of the Module List Page and the Module Details Page. Let me know if you need more detailed information or further assistance!
 
+### List View Component Documentation
+
+#### Overview
+The List View component is a versatile UI element that displays detailed information in a tabular format. It also includes a search bar for filtering modules and provides functionality for managing employees and positions.
+
+#### Features
+
+1. **Display Information:**
+   - The component displays all relevant details about employees and positions in a structured list or table format. This can include information such as employee names, positions, departments, and other relevant data.
+
+2. **Search Bar:**
+   - A search bar is included at the top of the list view, allowing users to filter the displayed information based on specific modules or keywords. The search function dynamically updates the list as the user types, making it easier to find specific entries.
+
+3. **Action Buttons:**
+   - The component includes several action buttons for managing employees and positions:
+     - **Add Employee:** Opens a form to input details and add a new employee to the list.
+     - **Add New Position:** Allows the user to define and add a new position to the system.
+     - **Delete Position/Employee:** Enables the removal of an existing position or employee from the list. The delete action may prompt the user to confirm before finalizing the removal.
+
+#### User Interactions
+
+- **Adding an Employee:**
+  - Users can click the "Add Employee" button to open a modal or form where they can input employee details such as name, position, and department. Once submitted, the new employee will appear in the list view.
+
+- **Adding a New Position:**
+  - By selecting the "Add New Position" button, users can define a new position by entering the position title, description, and any associated department. After saving, the new position will be available in the list.
+
+- **Deleting a Position/Employee:**
+  - The "Delete" action allows users to remove an employee or position. This action usually involves a confirmation step to prevent accidental deletions.
+
+#### Code Structure
+
+- **ListViewComponent:**
+  - Responsible for rendering the list of employees and positions.
+  - Contains logic for handling search input and filtering the displayed data.
+
+- **SearchBarComponent:**
+  - A child component within the ListView that handles user input for searching.
+  - Triggers an update to the ListViewComponent to filter the displayed items based on the search criteria.
+
+- **ActionButtonsComponent:**
+  - Handles the add and delete actions.
+  - Each button is tied to a specific function within the ListViewComponent to perform the corresponding operation.
+
+#### Example Usage
+```jsx
+<ListViewComponent
+  data={employeeData}
+  onAddEmployee={handleAddEmployee}
+  onAddPosition={handleAddPosition}
+  onDelete={handleDelete}
+/>
+```
+
+This documentation should provide a comprehensive overview of the List View component, detailing its features, user interactions, and code structure.

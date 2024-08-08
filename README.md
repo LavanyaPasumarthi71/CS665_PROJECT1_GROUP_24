@@ -60,166 +60,74 @@ The SQLite database is utilized for data storage, providing a lightweight and ea
 
 
 
-Certainly! Here’s a detailed documentation for your Employee List page:
-
----
-
-### Employee List Page Documentation
-
-#### Overview
-The Employee List page provides a comprehensive list of all employees. Users can perform various actions such as viewing profiles, editing employee positions, and exporting employee data. The available actions and functionalities are based on user roles.
-
-#### Features and Functionalities
-
-1. **Employee List**
-   - Displays a list of employees with relevant information such as name, position, and department.
-   - Includes pagination for easy navigation through large datasets.
-
-2. **Actions**
-   - **View Profile**
-     - Allows users to view detailed profiles of individual employees.
-     - Accessible by clicking on the "View Profile" button next to each employee's entry.
-   - **Edit Employee Position**
-     - Enables users to edit the position details of employees.
-     - Accessible by clicking on the "Edit" button next to each employee's entry.
-     - Changes are role-based and can be restricted to certain user roles (e.g., HR managers, supervisors).
-   - **Batch Export**
-     - Provides functionality to export the employee list to CSV or JSON formats.
-     - Export options include full export or filtered export based on applied filters.
-     - Export permissions are role-based, ensuring that only authorized users can perform export actions.
-
-#### Role-Based Access
-- **Administrator**
-  - Full access to all functionalities including viewing profiles, editing positions, and exporting data.
-- **HR Manager**
-  - Can view profiles, edit positions, and export data.
-- **Supervisor**
-  - Can view profiles and edit positions.
-- **Employee**
-  - Limited to viewing profiles 
-### Employee List Page Documentation
-
-#### Overview
-The Employee List page consists of two main components: **Employee List** and **Employee Profile**. This page allows users to view and manage employee information, including roles and reporting structures. 
-
-#### 
-This documentation provides a comprehensive overview of the Employee List page and its functionalities, detailing the access permissions and usage instructions for different roles.
-
-
-
-
-
-Sure, here's a detailed documentation for the two pages: the "Module List Page" and the "Module Details Page."
-
-## 
-    - **Activate Batch**: 
-        - **Button**: A button labeled "Activate Batch" to reactivate multiple previously deactivated modules.
-
-### User Interface
-
-- **Table Layout**: The modules are displayed in a tabular format with columns for module name, activity status, actions, etc.
-- **Action Buttons**: Action buttons are placed in a dedicated column, making it easy to perform actions on individual modules.
-
-## Module Details Page
-
-### Overview
-The Module Details Page provides in-depth information about a specific module, including its departments, positions, and employees. It also allows for the management of the module's status.
-
-### Features
-
-1. **Module Information**: 
-    - **Module Name**: Displays the name of the module.
-    - **Description**: Provides a detailed description of the module.
-    - **Activity Status**: Indicates the current activity status (active/inactive).
-
-2. **Departments**: 
-    - **List of Departments**: Displays all departments under the module.
-    - **Department Info**: Shows brief details about each department (e.g., name, head of department).
-
-3. **Positions**: 
-    - **List of Positions**: Displays all positions under each department.
-    - **Position Info**: Shows brief details about each position (e.g., title, reporting manager).
-
-4. **Employees**: 
-    - **List of Employees**: Displays all employees under each position.
-    - **Employee Info**: Shows brief details about each employee (e.g., name, job title, contact info).
-
-5. **Actions**:
-    - **Activate/Deactivate Module**:
-        - **Button**: A button to toggle the activity status of the module.
-    - **Activate/Deactivate Batch**:
-        - **Button**: A button to toggle the activity status of multiple modules at once.
-
-### User Interface
-
-- **Details Layout**: The page is structured to show hierarchical information, starting from the module, then departments, followed by positions, and finally employees.
-- **Action Buttons**: Located prominently to ensure easy access for activating/deactivating the module or performing batch actions.
-
-### Example Usage
-
-1. **Adding a New Module**:
-    - Click the "Add New Module" View" button next to the desired module.
-    - Review detailed information about the module, its departments, positions, and employees.
-
+Certainly! Here’s a detailed documentation for your Employee List 
 3. **Managing Module Status**:
     - Click "Deactivate" to make a module inactive.
     - Click "Activate" to reactivate a module.
     - Use "Deactivate Batch" or "Activate Batch" to manage multiple modules at once.
 
-This documentation covers the primary functionalities and layout of the Module List Page and the Module Details Page. Let me know if you need more detailed information or further assistance!
+This documentation covers the primary functionalities and layout of the Module List Page and the Module Details Page. Let me know if you need more detailed information or further 
 
-### List View Component Documentation
+### OrgChart Component Documentation
 
 #### Overview
-The List View component is a versatile UI element that displays detailed information in a tabular format. It also includes a search bar for filtering modules and provides functionality for managing employees and positions.
+The OrgChart component visually represents the organizational hierarchy of products, modules, departments, positions, and employees. It offers a tree-like structure where users can expand or collapse nodes to explore different levels of the hierarchy. Additionally, it includes a search feature to locate specific employees within the hierarchy.
 
 #### Features
 
-1. **Display Information:**
-   - The component displays all relevant details about employees and positions in a structured list or table format. This can include information such as employee names, positions, departments, and other relevant data.
+1. **Tree Hierarchy Display:**
+   - The OrgChart component represents the hierarchy in a tree structure with expandable nodes. The hierarchy is organized as follows:
+     - **Products:** The top-level nodes representing different products.
+     - **Modules:** Under each product, there are associated modules that can be expanded or collapsed.
+     - **Departments:** Expanding a module reveals the departments related to that module.
+     - **Positions:** Within each department, there are various positions.
+     - **Employees:** Finally, each position node can be expanded to show the employees holding that position.
 
-2. **Search Bar:**
-   - A search bar is included at the top of the list view, allowing users to filter the displayed information based on specific modules or keywords. The search function dynamically updates the list as the user types, making it easier to find specific entries.
+2. **Expand/Collapse Functionality:**
+   - Users can click on any node to expand or collapse it, revealing or hiding the child nodes. This allows for an intuitive exploration of the organizational structure.
 
-3. **Action Buttons:**
-   - The component includes several action buttons for managing employees and positions:
-     - **Add Employee:** Opens a form to input details and add a new employee to the list.
-     - **Add New Position:** Allows the user to define and add a new position to the system.
-     - **Delete Position/Employee:** Enables the removal of an existing position or employee from the list. The delete action may prompt the user to confirm before finalizing the removal.
+3. **Search Employee:**
+   - The component includes a search bar at the top, enabling users to quickly find specific employees within the hierarchy. When a search is performed, the hierarchy auto-expands to display the node where the searched employee is located.
 
 #### User Interactions
 
-- **Adding an Employee:**
-  - Users can click the "Add Employee" button to open a modal or form where they can input employee details such as name, position, and department. Once submitted, the new employee will appear in the list view.
+- **Expanding Nodes:**
+  - Users can click on a product node to expand it and view the associated modules. Further clicks on the module, department, and position nodes will reveal additional hierarchical levels down to individual employees.
 
-- **Adding a New Position:**
-  - By selecting the "Add New Position" button, users can define a new position by entering the position title, description, and any associated department. After saving, the new position will be available in the list.
+- **Collapsing Nodes:**
+  - Nodes can be collapsed by clicking on them again, which hides their child nodes. This helps users manage the visibility of large amounts of data.
 
-- **Deleting a Position/Employee:**
-  - The "Delete" action allows users to remove an employee or position. This action usually involves a confirmation step to prevent accidental deletions.
+- **Searching for an Employee:**
+  - Users can input an employee's name into the search bar. The component will search through the entire hierarchy, expand the relevant nodes, and highlight the employee's position within the hierarchy.
 
 #### Code Structure
 
-- **ListViewComponent:**
-  - Responsible for rendering the list of employees and positions.
-  - Contains logic for handling search input and filtering the displayed data.
+- **OrgChartComponent:**
+  - This is the main component responsible for rendering the tree structure.
+  - Manages the state of expanded/collapsed nodes and handles the search functionality.
+
+- **TreeNodeComponent:**
+  - Represents each node in the hierarchy (Product, Module, Department, Position, Employee).
+  - Contains logic for toggling the expand/collapse state and for displaying child nodes.
 
 - **SearchBarComponent:**
-  - A child component within the ListView that handles user input for searching.
-  - Triggers an update to the ListViewComponent to filter the displayed items based on the search criteria.
-
-- **ActionButtonsComponent:**
-  - Handles the add and delete actions.
-  - Each button is tied to a specific function within the ListViewComponent to perform the corresponding operation.
+  - Handles user input for searching employees.
+  - Triggers the expansion of the hierarchy to display the search results.
 
 #### Example Usage
 ```jsx
-<ListViewComponent
-  data={employeeData}
-  onAddEmployee={handleAddEmployee}
-  onAddPosition={handleAddPosition}
-  onDelete={handleDelete}
+<OrgChartComponent
+  data={orgData}
+  onSearch={handleSearch}
 />
 ```
 
-This documentation should provide a comprehensive overview of the List View component, detailing its features, user interactions, and code structure.
+#### Key Considerations
+
+- **Performance:**
+  - The component is optimized to handle large datasets by dynamically loading and rendering nodes only when they are expanded.
+  
+- **User Experience:**
+  - The tree structure is designed to be intuitive, allowing users to navigate complex organizational structures with ease.
+
+This documentation provides a detailed overview of the OrgChart component, outlining its features, user interactions, and code structure.
